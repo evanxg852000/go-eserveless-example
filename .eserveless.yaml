@@ -1,0 +1,12 @@
+repo: https://github.com/evanxg852000/go-eserveless-example
+rutime: go
+functions:
+    - name: API
+    type: http
+    
+    - name: Ticker
+    type: cron
+    interval: 4h 
+    meta:
+        path: '/usr/bin'
+        name: 'TEST'
